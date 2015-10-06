@@ -23,14 +23,15 @@ vagrant up
 ## Kicking the tires
 
 ```
-#Log into Ambari (username:password admin:admin) and start up the Hadoop cluster
-192.168.64.101:8080
+#Use a web browser to log into Ambari (username:password=admin:admin) and start up the Hadoop cluster
+http://192.168.64.101:8080
 
 #Once its running, log in as root and start Accumulo
 vagrant ssh
 sudo su
 start-all.sh #this accumulo start script is in your path
 
+#Start accumulo shell: password=dev
 accumulo shell -u root
 ```
 
