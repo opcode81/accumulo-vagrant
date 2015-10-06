@@ -46,7 +46,7 @@ export PATH=$PATH:/usr/lib/accumulo/bin
 
 echo "Installing Accumulo"
 
-curl -O -L -s http://www.carfab.com/apachesoftware/accumulo/1.6.1/accumulo-1.6.1-bin.tar.gz
+curl -O -L -s http://central.maven.org/maven2/org/apache/accumulo/accumulo/1.6.1/accumulo-1.6.1-bin.tar.gz
 tar xvzf accumulo-1.6.1-bin.tar.gz
 sudo mv accumulo-1.6.1 /usr/lib/accumulo
 sudo chown -R root:root /usr/lib/accumulo
